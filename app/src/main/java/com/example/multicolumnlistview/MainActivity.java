@@ -51,6 +51,15 @@ public class MainActivity extends ActionBarActivity {
 
 		Model item1, item2, item3, item4, item5;
 
+		for(int i=0;i<100;i++)
+		{ String str1=String.format("%02d",i);
+			String str2=String.format("%Block02d",i);
+			String str3="Total";
+			String str4="Test";
+			item1=new Model(str1,str2,str3,str4);
+			productList.add(item1);
+		}
+
 		item1 = new Model("1", "Apple (Northern Spy)", "Fruits", "₹. 200");
 		productList.add(item1);
 
